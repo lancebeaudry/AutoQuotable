@@ -1,0 +1,2067 @@
+/* Components & Variables */
+/* Global Styles ----------------- */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(animate.min.css);
+/* line 44, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+body {
+  margin: 0px;
+  position: relative;
+  background-color: #fff;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif, !important; }
+
+/* line 50, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+h1, h2, h3, h4, h5, h6 {
+  color: #212121; }
+
+/* line 53, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+h1 {
+  font-size: 2em; }
+
+/* line 56, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+h2 {
+  font-size: 1.5em; }
+
+/* line 59, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+h3 {
+  font-size: 1.17em; }
+
+/* line 62, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+h4 {
+  font-size: 1.12em; }
+
+/* line 65, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+h5 {
+  font-size: 0.83em; }
+
+/* line 68, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+h6 {
+  font-size: 0.75em; }
+
+/* line 71, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+p {
+  font-size: 1em;
+  color: #4a4a4a; }
+
+/* line 75, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.row {
+  margin-bottom: 0px; }
+
+/* line 78, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.fa {
+  padding: 10px; }
+
+/* line 81, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.anchor {
+  display: block;
+  position: relative;
+  top: 10px;
+  visibility: hidden; }
+
+/* line 87, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.title-img {
+  margin: auto;
+  width: 200px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-top: 90px; }
+
+/* line 95, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+a button:hover {
+  background-color: #2196f3; }
+
+/* line 101, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+a,
+a:hover,
+a:active,
+a:focus {
+  border: none;
+  outline: none; }
+
+/* line 105, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.btn {
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  -moz-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  -o-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26); }
+
+/* line 111, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.btn:hover {
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  -moz-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  -o-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26); }
+
+/* line 117, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #f7f7f7 inset !important;
+  -webkit-text-fill-color: #4a4a4a !important; }
+
+/* line 121, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+::-webkit-input-placeholder {
+  color: #959595; }
+
+/* line 125, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #959595; }
+
+/* line 129, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #959595; }
+
+/* line 133, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+:-ms-input-placeholder {
+  color: #959595; }
+
+@media (min-width: 768px) {
+  /* line 137, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+  .container {
+    width: auto; } }
+
+@media (max-width: 767px) {
+  /* line 142, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+  body {
+    padding: 0px; }
+  /* line 145, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+  .container {
+    padding-left: 25px;
+    padding-right: 25px; }
+  /* line 149, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+  .anchor {
+    top: -30px; } }
+
+/* Nav ------------------------- */
+/* line 154, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+#logo {
+  width: 120px;
+  margin-top: 18px; }
+
+/* line 158, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+#logo2 {
+  display: none;
+  width: 120px;
+  margin-top: 18px; }
+
+/* line 163, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.navbar-inverse {
+  border: none;
+  background-color: transparent; }
+
+/* line 167, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.navbar-collapse {
+  margin-top: 4px;
+  background-color: transparent; }
+
+/* line 171, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.navbar-inverse .navbar-collapse {
+  border: none; }
+
+/* line 174, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.box-shadow {
+  transition: all 0.4s ease-in-out;
+  background-color: #f7f7f7 !important;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+  -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+  -o-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26); }
+
+/* line 185, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:active,
+.navbar-inverse .navbar-nav > .open > a:focus {
+  background-color: #2196f3;
+  color: #f7f7f7; }
+
+/* line 189, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.navbar-brand h3 {
+  color: #f7f7f7; }
+
+/* line 192, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.navbar-header .navbar-toggle {
+  border: none; }
+
+/* line 197, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.navbar-header .navbar-toggle:hover,
+.navbar-header .navbar-toggle:active,
+.navbar-header .navbar-toggle:focus {
+  border: none;
+  background-color: inherit; }
+
+/* line 201, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.navbar-header .navbar-toggle > .icon-bar {
+  background-color: #f7f7f7;
+  width: 30px;
+  height: 3px; }
+
+/* line 206, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.navbar-collapse ul.nav li a {
+  color: #f7f7f7;
+  text-transform: uppercase;
+  font-size: 1em; }
+
+/* line 212, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.navbar-inverse .navbar-nav .open .dropdown-menu > li > a,
+.navbar-collapse ul.nav li.dropdown li a {
+  padding: 10px;
+  margin-left: 10px;
+  color: #f7f7f7; }
+
+/* line 218, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover,
+.navbar-collapse ul.nav li.dropdown li a:hover {
+  background-color: inherit; }
+
+/* line 221, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.navbar-nav > li > .dropdown-menu {
+  background-color: #2196f3;
+  margin-top: -1px; }
+
+/* line 225, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.navbar-toggle {
+  margin-top: -2px;
+  margin-right: 0px;
+  margin-bottom: -10px; }
+
+/* line 230, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+#menu .fa {
+  color: #f7f7f7; }
+
+/* line 233, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.zip-on-nav {
+  display: none; }
+
+/* line 236, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.zip-on-nav form {
+  width: 250px;
+  display: inline;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto; }
+
+/* line 244, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.zip-on-nav .form-group {
+  display: inline-block;
+  height: 40px;
+  margin-top: 10px; }
+
+/* line 249, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.zip-on-nav .form-group .form-control {
+  font-size: 1em;
+  text-align: center; }
+
+/* line 253, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.zip-on-nav .form-group input[type=text] {
+  width: 120px;
+  height: 40px; }
+
+/* line 257, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.zip-on-nav .form-group input[type=text]:focus {
+  background-color: #f7f7f7; }
+
+/* line 260, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.zip-on-nav .form-group #zip-submit-bottom {
+  height: 40px;
+  padding: 4px;
+  width: 120px;
+  min-width: 120px;
+  font-size: 1em; }
+
+/* line 267, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.zip-on-nav #zip-nav label {
+  position: absolute;
+  background-color: #f7f7f7;
+  color: #F44336;
+  padding: 5px;
+  border-radius: 4px;
+  margin-top: 10px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  -moz-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  -o-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26); }
+
+/*Makes menu item drop on hover on desktop screens */
+@media (min-width: 768px) {
+  /* line 281, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+  ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block; }
+  /* line 284, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+  .navbar-nav {
+    float: right;
+    margin-right: 2%; }
+  /* line 288, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+  .box-shadow {
+    transition: all 0.5s ease-in-out; }
+  /* line 291, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+  .navbar-collapse ul.black-list li a {
+    color: #4a4a4a; }
+  /* line 294, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+  .navbar-collapse ul.nav li a:hover {
+    color: #c9c9c9; }
+  /* line 297, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+  .navbar-collapse ul.black-list li a:hover {
+    color: #171717; } }
+
+@media (max-width: 767px) {
+  /* line 305, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a,
+  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:active,
+  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus {
+    font-size: 1em;
+    color: #f7f7f7; }
+  /* line 309, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+  .navbar-collapse ul.nav li a:hover {
+    color: #f7f7f7; }
+  /* line 312, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+  .navbar-inverse .navbar-collapse {
+    background-color: #2196f3;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+    -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+    -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+    -o-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26); }
+  /* line 319, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+  .zip-on-nav form {
+    display: none; } }
+
+/* Header ----------------------- */
+/* line 324, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+header {
+  background-color: #2196f3; }
+
+/* line 327, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+header#home {
+  background-image: url(../images/car.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 550px;
+  background-repeat: no-repeat;
+  margin-top: -10px; }
+
+/* line 335, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+header#grandrapids {
+  background-image: url(../images/Downtown_Grand_Rapids_from_River_House.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 550px;
+  background-repeat: no-repeat;
+  margin-top: -10px; }
+
+/* line 343, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+header#quote {
+  background-image: none;
+  background-color: #2196f3;
+  height: 350px; }
+
+/* line 348, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+header#sign-up-page {
+  height: 320px; }
+
+/* line 351, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+header#quote h2 {
+  color: #f7f7f7;
+  margin-top: 100px; }
+
+/* line 355, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.header-content {
+  padding-top: 30px; }
+
+/* line 358, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+header h1 {
+  text-align: center;
+  text-transform: capitalize;
+  padding: 20px;
+  padding-bottom: 10px;
+  line-height: 1.4em;
+  color: #f7f7f7;
+  font-size: 2.4em;
+  font-weight: 800; }
+
+/* line 368, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+header h3 {
+  padding: 15px;
+  margin-top: 50px;
+  font-size: 1.404em;
+  line-height: 1.5em;
+  text-align: center;
+  color: #f7f7f7; }
+
+/* line 376, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.zip-area {
+  display: block;
+  margin-top: 150px; }
+
+/* line 380, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.zip-area h4 {
+  padding: 10px;
+  background-color: #2196f3;
+  color: #f7f7f7;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: .05em;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px; }
+
+/* line 391, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.zip-area .box {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  max-width: 400px; }
+
+/* line 396, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.zip-area .form-group {
+  padding: 0px; }
+
+/* line 399, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.zip-area .form-control {
+  width: 80%;
+  max-width: 220px;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: #f7f7f7;
+  text-align: center; }
+
+/* line 408, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+#zip-submit {
+  border-radius: 4px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  background-color: #FF9800;
+  border-color: #FF9800;
+  color: #f7f7f7;
+  width: 100%; }
+
+/* line 419, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+#zip-submit:hover,
+#zip-submit:active,
+#zip-submit:focus {
+  border-color: #FB8C00;
+  background-color: #FB8C00; }
+
+@media (max-width: 991px) {
+  /* line 424, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+  header#quote {
+    height: 370px; } }
+
+@media (max-width: 767px) {
+  /* line 429, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+  header#quote {
+    height: 390px; }
+  /* line 432, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+  header#sign-up-page {
+    height: 370px; }
+  /* line 435, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+  header h1 {
+    font-size: 2em;
+    padding: 10px;
+    padding-top: 10px; }
+  /* line 440, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+  header h3 {
+    font-size: 1.287em;
+    padding: 5px;
+    margin-top: 0px; }
+  /* line 445, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+  .zip-area {
+    margin: auto;
+    margin-top: 0px;
+    width: 90%;
+    max-width: 380px; } }
+
+@media (max-width: 380px) {
+  /* line 453, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+  header#quote {
+    height: 410px; }
+  /* line 456, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+  header#sign-up-page {
+    height: 390px; }
+  /* line 459, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+  header h1 {
+    font-size: 1.5em;
+    padding: 5px; }
+  /* line 463, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+  header h3 {
+    font-size: 1.17em;
+    padding: 5px; } }
+
+/* About ----------------------- */
+/* line 469, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+#about {
+  margin-bottom: 50px;
+  margin-top: -80px; }
+
+/* line 473, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+#about h2 {
+  width: 60%;
+  margin: auto;
+  font-size: 2.2em;
+  line-height: 1.4em;
+  margin-top: 100px;
+  font-weight: 800; }
+
+/* line 481, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+#about h4 {
+  margin: auto;
+  text-align: center;
+  margin-top: 30px;
+  padding: 35px;
+  max-width: 360px;
+  color: #959595;
+  text-transform: uppercase;
+  border-top: 1px solid #2196f3; }
+
+/* line 491, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+#about h3 {
+  font-size: 1.8em;
+  color: #2196f3;
+  font-weight: 800;
+  text-align: left;
+  line-height: 1.2em; }
+
+/* line 498, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.about-section {
+  margin: 160px 0px; }
+
+/* line 501, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+#icon-section {
+  margin-bottom: 60px; }
+
+/* line 504, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.service-icon {
+  margin: 0px 8%;
+  display: inline-block; }
+
+/* line 508, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.service-icon img {
+  width: 40px; }
+
+/* line 511, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.service-icon p {
+  padding: 4px;
+  color: #959595;
+  display: inline; }
+
+/* line 516, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+#about .container {
+  margin-top: 50px; }
+
+/* line 519, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.paragraph p {
+  font-size: 1.2em;
+  text-align: left;
+  max-width: 440px;
+  margin-top: 30px; }
+
+/* line 525, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.about-img {
+  width: 200px;
+  margin-top: 10px; }
+
+/* line 529, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+#macbook {
+  width: 300px; }
+
+/* line 532, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+#iphone {
+  width: 150px; }
+
+@media (min-width: 768px) {
+  /* line 536, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+  #show-sm-img {
+    display: none; } }
+
+@media (max-width: 1000px) {
+  /* line 541, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+  .service-icon {
+    margin: 0px 3%; }
+  /* line 544, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+  #about {
+    margin-top: -30px; } }
+
+@media (max-width: 767px) {
+  /* line 549, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+  #about h2 {
+    width: 85%; }
+  /* line 552, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+  #show-lg-img {
+    display: none; }
+  /* line 555, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+  #about h3 {
+    font-size: 1.638em;
+    line-height: 1.4em; }
+  /* line 559, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+  .about-section {
+    margin-bottom: 100px;
+    margin-top: 0px; }
+  /* line 563, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+  .about-section .col-xs-12 {
+    text-align: center; }
+  /* line 567, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+  .about-section .paragraph p,
+  #about h3 {
+    text-align: center;
+    margin: auto;
+    margin-bottom: 30px; }
+  /* line 572, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+  #about h2 {
+    font-size: 1.5em;
+    margin-top: 0px; }
+  /* line 576, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+  #about h4 {
+    max-width: 380px;
+    line-height: 1.4em; }
+  /* line 580, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+  .about-img {
+    width: 150px; }
+  /* line 583, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+  #macbook {
+    width: 200px; }
+  /* line 586, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+  #iphone {
+    width: 100px; } }
+
+@media (max-width: 635px) {
+  /* line 591, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+  .service-icon p {
+    display: block; }
+  /* line 594, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+  .service-icon {
+    margin: 0px 10px; }
+  /* line 597, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+  .service-icon img {
+    width: 30px; } }
+
+@media (max-width: 480px) {
+  /* line 602, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+  .service-icon p {
+    font-size: 12px; }
+  /* line 605, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+  .service-icon {
+    margin: 0px 0px; } }
+
+/* Auto Body Shops ----------------------------------------------------------------- */
+/* line 610, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+header#auto-body {
+  background-image: url(../images/stick-shift.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  background-repeat: no-repeat;
+  margin-top: -10px; }
+
+/* line 618, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+#auto-body .header-content {
+  width: 65%; }
+
+/* line 621, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+#auto-body h1 {
+  font-size: 2.8em;
+  text-align: left;
+  margin-top: 70px; }
+
+/* line 626, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+#auto-body h2 {
+  color: #f7f7f7;
+  padding: 20px;
+  font-size: 2em;
+  text-align: left;
+  font-style: italic; }
+
+/* line 633, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.sign-up-section .modal-dialog {
+  margin-top: -150px; }
+
+/* line 637, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+#sign-up,
+#learn-more {
+  float: left;
+  margin-left: 20px;
+  border-radius: 4px;
+  background-color: #FF9800;
+  border-color: #FF9800;
+  color: #f7f7f7;
+  width: 200px;
+  margin-bottom: 50px;
+  transition: all 0.2s ease-in-out; }
+
+/* line 653, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+#sign-up:hover,
+#sign-up:active,
+#sign-up:focus,
+#sign-up-bottom:hover,
+#sign-up-bottom:active,
+#sign-up-bottom:focus {
+  background-color: #FB8C00;
+  border-color: #FB8C00; }
+
+/* line 657, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+#learn-more {
+  background-color: #00C853;
+  border-color: #00C853; }
+
+/* line 663, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+#learn-more:hover,
+#learn-more:active,
+#learn-more:focus {
+  background-color: #00af49;
+  border-color: #00af49; }
+
+/* line 669, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+#learn-more .fa,
+#sign-up .fa,
+#sign-up-bottom .fa {
+  padding: 0px; }
+
+/* line 672, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+section a {
+  display: block; }
+
+/* line 675, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+section a:hover {
+  text-decoration: none; }
+
+/* line 678, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+#sign-up-bottom {
+  border-radius: 4px;
+  background-color: #FF9800;
+  border-color: #FF9800;
+  color: #f7f7f7;
+  width: 200px;
+  margin-bottom: 50px;
+  transition: all 0.2s ease-in-out; }
+
+/* line 687, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.about-pros h5 {
+  width: 90%;
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+  margin-top: 20px;
+  color: #585858;
+  line-height: 1.5em;
+  font-size: 1.17em; }
+
+/* line 697, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+header#sign-up-page h2 {
+  color: #f7f7f7;
+  font-size: 2.6em;
+  padding: 30px;
+  padding-bottom: 10px; }
+
+/* line 703, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+header#sign-up-page h4 {
+  color: #f7f7f7;
+  text-align: center;
+  line-height: 1.4em;
+  font-size: 1.12em;
+  padding: 30px; }
+
+@media (min-width: 1000px) {
+  /* line 711, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+  #auto-body h3 {
+    width: 60%; } }
+
+@media (max-width: 767px) {
+  /* line 716, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+  header#auto-body {
+    height: 500px; }
+  /* line 719, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+  header#sign-up-page h4 {
+    padding: 10px; }
+  /* line 722, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+  #auto-body h1 {
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 50px; }
+  /* line 727, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+  #auto-body h2 {
+    font-size: 1.5em;
+    text-align: center;
+    text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.76); }
+  /* line 733, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+  #sign-up,
+  #learn-more {
+    float: none;
+    margin: auto;
+    display: inline-block;
+    margin-top: 50px; }
+  /* line 739, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+  #auto-body .header-content {
+    width: 100%; } }
+
+@media (max-width: 480px) {
+  /* line 744, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+  header#auto-body {
+    height: 550px; }
+  /* line 748, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+  #sign-up,
+  #learn-more {
+    float: none;
+    margin: auto;
+    display: inline-block;
+    margin-top: 20px; } }
+
+/* line 755, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.paragraph ul {
+  text-align: left;
+  list-style: none;
+  padding: 0px; }
+
+/* line 760, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.paragraph ul li {
+  padding: 10px 0px; }
+
+/* line 763, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.paragraph .fa-check {
+  color: #00C853;
+  float: left;
+  margin-top: 2px; }
+
+@media (min-width: 768px) {
+  /* line 769, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+  .paragraph .fa-check {
+    padding-bottom: 10px; } }
+
+@media (max-width: 480px) {
+  /* line 774, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+  .paragraph .fa-check {
+    padding-bottom: 25px; } }
+
+/* line 778, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.home-list {
+  text-align: left;
+  font-size: 16px;
+  padding: 0px; }
+
+@media (max-width: 767px) {
+  /* line 784, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+  .home-list {
+    width: 80%;
+    margin: auto; } }
+
+@media (max-width: 480px) {
+  /* line 790, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+  .home-list {
+    width: 100%;
+    margin: auto; } }
+
+/* line 795, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.home-list li {
+  padding: 14px;
+  list-style: none; }
+
+/* line 799, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.list-number li {
+  counter-increment: step-counter; }
+
+/* line 802, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.list-number li::before {
+  content: counter(step-counter);
+  margin-right: 15px;
+  color: #00C853;
+  font-size: 1.17em;
+  margin-bottom: 35px; }
+
+/* line 809, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.about-pros .about-img {
+  width: 300px; }
+
+/* line 812, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+#repeat-jobs {
+  width: 175px; }
+
+@media (max-width: 767px) {
+  /* line 816, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+  .about-pros .about-img {
+    width: 90%;
+    max-width: 250px; } }
+
+/* Message ------------------------ */
+/* line 822, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.message p {
+  color: #959595;
+  padding: 20px; }
+
+/* CTA ----------------------- */
+/* line 827, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+section#cta {
+  background-color: #00C853;
+  padding: 20px;
+  margin-bottom: -20px; }
+
+/* line 832, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+section#cta h2 {
+  color: #f7f7f7;
+  text-transform: uppercase;
+  font-size: 2em;
+  margin-bottom: 30px; }
+
+/* line 838, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+section#cta h4 {
+  text-align: center;
+  color: #f7f7f7;
+  font-size: 1.12em;
+  margin-bottom: 10px; }
+
+/* line 844, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+#cta .form-group {
+  padding: 0px; }
+
+/* line 847, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+#cta .form-control {
+  width: 250px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  text-align: center; }
+
+/* line 854, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+#zip-cta label {
+  display: block;
+  text-align: center; }
+
+/* line 858, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+#zip-submit-bottom {
+  border-radius: 4px;
+  background-color: #FF9800;
+  border-color: #FF9800;
+  color: #f7f7f7;
+  width: 200px;
+  margin-bottom: 50px;
+  transition: all 0.2s ease-in-out; }
+
+/* line 869, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+#zip-submit-bottom:hover,
+#zip-submit-bottom:active,
+#zip-submit-bottom:focus {
+  background-color: #FB8C00;
+  border-color: #FB8C00; }
+
+/* More ----------------------- */
+/* line 874, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+#more {
+  background-color: #f7f7f7;
+  padding: 40px;
+  margin-bottom: 0px; }
+
+/* line 879, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+#more .container {
+  margin-bottom: 40px; }
+
+/* line 883, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+#more #question-mark,
+#more .fa-check-circle {
+  float: none;
+  display: block;
+  padding: 20px;
+  color: #00C853;
+  margin-bottom: -20px;
+  margin-left: 0px;
+  text-shadow: #dedede 1px 1px, #e0e0e0 2px 2px, #e3e3e3 3px 3px, #e5e5e5 4px 4px, #e8e8e8 5px 5px, #eaeaea 6px 6px, #ededed 7px 7px, #efefef 8px 8px, #f2f2f2 9px 9px, #f4f4f4 10px 10px, #f7f7f7 11px 11px; }
+
+/* line 902, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+#more h2 {
+  font-size: 2em;
+  color: #4a4a4a;
+  line-height: 1.3em; }
+
+/* line 907, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+#more .btn {
+  margin-top: 35px;
+  background-color: #f7f7f7;
+  color: #FF9800;
+  border: 3px solid #FF9800;
+  transition: all 0.2s ease-in-out; }
+
+/* line 914, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+#more .btn:hover {
+  color: #f7f7f7;
+  background-color: #FB8C00;
+  border: 3px solid #FB8C00; }
+
+@media (max-width: 767px) {
+  /* line 920, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+  #more {
+    padding: 0px; }
+  /* line 923, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+  #more .content {
+    margin: 100px 0px; }
+  /* line 926, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+  #more .container {
+    margin-bottom: 0px; } }
+
+/* Main ----------------------- */
+/* line 931, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.info {
+  margin-bottom: 30px;
+  margin-top: 10px; }
+
+/* line 935, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.info .content {
+  background-color: #f7f7f7;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  -moz-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  -o-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  transition: all 0.2s ease-in-out;
+  border-radius: 4px;
+  padding: 20px;
+  margin: 20px 0px; }
+
+/* line 946, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.info .content2 {
+  background-color: #fff;
+  border-radius: 4px;
+  margin: 20px 0px;
+  border: none;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.16), 0px 2px 5px 0px rgba(0, 0, 0, 0.23);
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.16), 0px 2px 5px 0px rgba(0, 0, 0, 0.23);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.16), 0px 2px 5px 0px rgba(0, 0, 0, 0.23);
+  -o-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.16), 0px 2px 5px 0px rgba(0, 0, 0, 0.23); }
+
+/* line 956, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.content .fa {
+  color: #959595; }
+
+/* line 959, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.content h3 {
+  font-size: 1.5em; }
+
+/* line 962, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.info p {
+  width: 80%;
+  margin: auto; }
+
+/* FAQs ----------------------- */
+/* line 967, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+#faqs .container {
+  margin-top: 50px;
+  margin-bottom: 100px; }
+
+/* line 971, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+#faqs .panel {
+  margin: auto;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.16);
+  -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.16);
+  -o-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.16);
+  transition: all 0.2s ease-in-out; }
+
+/* line 981, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+#faqs .panel:hover {
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  -moz-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  -o-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26); }
+
+/* line 987, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+#faqs .panel-heading {
+  padding: 0px; }
+
+/* line 990, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+#faqs h4.panel-title {
+  color: #212121;
+  line-height: 1.5em;
+  padding: 15px;
+  cursor: pointer; }
+
+/* line 996, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+#faqs .panel-body {
+  background-color: #fff;
+  color: #4a4a4a; }
+
+/* line 1000, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+#faqs .panel-body a {
+  display: inline; }
+
+/* line 1003, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+#contact-btn {
+  border-radius: 4px;
+  background-color: #FF9800;
+  border-color: #FF9800;
+  color: #f7f7f7;
+  display: block;
+  width: 200px;
+  margin-bottom: 50px;
+  transition: all 0.2s ease-in-out; }
+
+/* line 1015, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+#contact-btn:hover,
+#contact-btn:active,
+#contact-btn:focus {
+  background-color: #FB8C00;
+  border-color: #FB8C00;
+  border: 1px solid #FF9800; }
+
+/* line 1020, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+#city h2 {
+  font-size: 1.5em;
+  line-height: 1.4em;
+  font-weight: 800;
+  text-align: left; }
+
+/* line 1026, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+#city h3 {
+  font-size: 1.17em;
+  line-height: 1.4em;
+  font-weight: 800;
+  text-align: left; }
+
+/* line 1032, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+#city p {
+  text-align: left;
+  padding: 10px; }
+
+/* Contact ----------------------- */
+/* line 1037, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+#form {
+  margin-bottom: 40px; }
+
+/* line 1040, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+#form h1 {
+  color: #585858;
+  max-width: 950px;
+  padding: 0px 15px;
+  text-align: center;
+  margin: auto;
+  margin-top: 30px;
+  font-size: 1.5em;
+  line-height: 1.4em; }
+
+/* line 1050, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+#form label {
+  color: #F44336;
+  padding: 5px;
+  padding-left: 0px;
+  text-align: left;
+  display: block; }
+
+/* line 1057, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+#form .form-label {
+  color: #959595;
+  text-align: left;
+  float: none; }
+
+/* line 1062, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.content2 h2 {
+  margin-top: 0px;
+  padding: 10px;
+  background-color: #2196f3;
+  color: #f7f7f7;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  margin-bottom: 15px; }
+
+/* line 1071, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+#contact {
+  margin-top: 30px; }
+
+/* line 1074, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+#contact .fa {
+  color: #00C853; }
+
+/* line 1077, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+#contact h4 a {
+  color: #00C853; }
+
+/* line 1080, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+#contact-form .form-group {
+  padding: 7.5px 15px;
+  margin-bottom: 0px; }
+
+/* line 1084, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+#contact-form .form-group .form-control {
+  background-color: #f7f7f7;
+  border-color: #ccc; }
+
+/* line 1088, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+#contact-form .form-group .form-control:focus {
+  border-color: #2196f3; }
+
+/* line 1091, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+#contact-form textarea.form-control {
+  margin-bottom: 10px; }
+
+/* line 1094, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+#notify {
+  border: 0px;
+  display: inline-block;
+  width: 95%;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  padding: 11px;
+  border-radius: 4px;
+  background-color: #2196f3;
+  color: #f7f7f7;
+  text-transform: uppercase; }
+
+/* Footer ----------------------- */
+/* line 1107, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+footer {
+  margin-top: 0px;
+  border-top: 1px solid #ccc;
+  background-color: #f5f5f5;
+  padding: 0px;
+  color: #959595; }
+
+/* line 1114, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+footer .row {
+  margin-bottom: 30px; }
+
+/* line 1117, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+footer .col-sm-3 {
+  padding: 20px; }
+
+/* line 1120, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+footer h4 {
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #585858; }
+
+/* line 1125, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.navigation {
+  display: inline;
+  list-style-type: none; }
+
+/* line 1129, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+footer a {
+  color: #959595; }
+
+/* line 1132, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+footer a:hover {
+  color: #4a4a4a;
+  text-decoration: none; }
+
+/* line 1139, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+footer .fa:focus,
+footer .fa:active,
+footer .fa:visited,
+footer .fa:link {
+  color: #4a4a4a; }
+
+/* line 1142, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.social {
+  text-align: center; }
+
+/* line 1145, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.contact-info p {
+  color: #959595; }
+
+/* line 1148, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+#copyright {
+  border-top: 1px solid #ccc;
+  text-align: center;
+  padding: 15px;
+  padding-top: 30px;
+  padding-bottom: 5px;
+  margin-bottom: 0px;
+  color: #959595;
+  background-color: #f5f5f5; }
+
+/* line 1158, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+#footer-logo {
+  width: 130px;
+  display: block;
+  margin: auto;
+  margin-bottom: 10px; }
+
+/* line 1164, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+footer .bottom {
+  text-align: center;
+  margin-bottom: 20px; }
+
+/* line 1168, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+footer .legal {
+  font-size: 0.8em;
+  color: #959595;
+  padding: 5px;
+  text-decoration: underline;
+  display: inline-block; }
+
+@media (max-width: 991px) {
+  /* line 1176, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+  footer li {
+    margin: 20px; }
+  /* line 1179, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+  footer .fa {
+    padding: 20px; } }
+
+/* Terms ===================================================== */
+/* line 1184, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+#terms {
+  padding: 10px;
+  max-width: 800px;
+  margin: auto;
+  margin-bottom: 30px; }
+
+/* line 1190, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+#terms h4 {
+  margin-bottom: 30px;
+  margin-top: 30px; }
+
+/* line 1194, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+#terms p {
+  text-align: left; }
+
+/* Multiple File Input ====================================== */
+/* line 1200, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.file-input {
+  overflow-x: auto; }
+
+/* line 1204, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.file-loading {
+  top: 0;
+  right: 0;
+  width: 25px;
+  height: 25px;
+  font-size: 999px;
+  text-align: right;
+  color: #fff;
+  background: transparent url("../img/loading.gif") top left no-repeat;
+  border: none; }
+
+/* line 1215, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.btn-file {
+  position: relative;
+  display: block;
+  margin-left: 0px;
+  width: 50%;
+  min-width: 300px;
+  background-color: #FF9800;
+  border-color: #FF9800;
+  color: #f7f7f7;
+  cursor: pointer;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  transition: all 0.2s ease-in-out; }
+
+/* line 1231, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.btn-file:hover,
+.btn-file:active,
+.btn-file:focus {
+  background-color: #FB8C00;
+  border-color: #FB8C00; }
+
+/* line 1235, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.btn-file input[type=file] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  text-align: right;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  background: none repeat scroll 0 0 transparent;
+  cursor: pointer;
+  display: block; }
+
+/* line 1249, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.buttons .close {
+  padding: 8px;
+  color: #959595;
+  opacity: 1;
+  transition: all 0.2s ease-in-out; }
+
+/* line 1255, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.buttons #remove {
+  display: inline;
+  font-size: 16px;
+  text-align: center;
+  vertical-align: inherit;
+  padding: 4px;
+  color: #959595;
+  transition: all 0.2s ease-in-out; }
+
+/* line 1264, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.buttons .close:hover {
+  color: #4a4a4a; }
+
+/* line 1267, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.buttons #remove:hover {
+  color: #4a4a4a; }
+
+/* line 1270, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.file-caption-name {
+  display: inline-block;
+  overflow: hidden;
+  max-height: 20px;
+  padding-right: 10px;
+  word-break: break-all; }
+
+/* line 1278, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.file-caption-ellipsis {
+  position: absolute;
+  right: 10px;
+  margin-top: -6px;
+  font-size: 1.2em;
+  display: none;
+  font-weight: bold;
+  cursor: default; }
+
+/* line 1288, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.kv-has-ellipsis .file-caption-ellipsis {
+  display: inline; }
+
+/* line 1292, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.kv-has-ellipsis {
+  padding-right: 17px; }
+
+/* line 1296, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.kv-search-container .kv-search-clear {
+  position: absolute;
+  padding: 10px;
+  right: 0px; }
+
+/* line 1302, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.file-error-message {
+  background-color: #f2dede;
+  color: #a94442;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px; }
+
+/* line 1310, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.file-error-message pre, .file-error-message ul {
+  margin: 5px 0;
+  text-align: left; }
+
+/* line 1315, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.file-caption-disabled {
+  background-color: #EEEEEE;
+  cursor: not-allowed;
+  opacity: 1; }
+
+/* line 1321, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.file-input .btn[disabled], .file-input .btn .disabled {
+  cursor: not-allowed; }
+
+/* line 1325, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.file-preview {
+  padding: 5px;
+  width: 100%;
+  margin-bottom: 5px; }
+
+/* line 1331, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.file-preview-frame {
+  display: table;
+  float: left;
+  margin-top: 20px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  padding: 6px;
+  text-align: center;
+  vertical-align: middle; }
+
+/* line 1342, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.file-preview-image {
+  vertical-align: text-center; }
+
+/* line 1347, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.file-preview-text {
+  width: 160px;
+  color: #428bca;
+  font-size: 11px;
+  text-align: center; }
+
+/* line 1354, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.file-preview-other {
+  padding-top: 48px;
+  text-align: center; }
+
+/* line 1359, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.file-preview-other i {
+  font-size: 2.4em; }
+
+/* line 1363, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.file-other-error {
+  width: 100%;
+  padding-top: 30px;
+  text-align: right; }
+
+/* line 1371, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.file-input-new .file-preview, .file-input-new .close, .file-input-new .glyphicon-file,
+.file-input-new .fileinput-remove-button, .file-input-new .fileinput-upload-button,
+.file-input-ajax-new .fileinput-remove-button, .file-input-ajax-new .fileinput-upload-button {
+  display: none; }
+
+/* line 1374, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.fileinput-remove {
+  border-radius: 4px;
+  width: 100px;
+  border: 1px solid #959595;
+  margin-top: 25px; }
+
+/* line 1380, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.wrap-indicator {
+  font-weight: bold;
+  color: #245269;
+  cursor: pointer; }
+
+/* line 1386, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.file-actions {
+  text-align: left; }
+
+/* line 1390, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.file-footer-buttons {
+  float: right; }
+
+/* line 1394, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.file-thumbnail-footer .file-caption-name {
+  padding-top: 4px;
+  font-size: 11px;
+  color: #777;
+  display: none; }
+
+/* line 1401, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.file-upload-indicator {
+  padding-top: 2px;
+  cursor: default; }
+
+/* line 1406, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.file-upload-indicator:hover {
+  font-size: 1.2em;
+  font-weight: bold;
+  padding-top: 0; }
+
+/* line 1412, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.file-drop-zone {
+  border: 1px dashed #aaa;
+  border-radius: 4px;
+  height: 100%;
+  text-align: center;
+  vertical-align: middle;
+  margin: 12px 15px 12px 12px;
+  padding: 5px; }
+
+/* line 1422, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.file-drop-zone-title {
+  color: #aaa;
+  font-size: 40px;
+  padding: 85px 10px; }
+
+/* line 1428, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.highlighted {
+  border: 2px dashed #999 !important;
+  background-color: #f0f0f0; }
+
+/* line 1433, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.file-uploading {
+  background-image: url("../img/loading-sm.gif");
+  background-position: center bottom 10px;
+  background-repeat: no-repeat;
+  opacity: 0.6; }
+
+/* line 1440, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.file-icon-large {
+  font-size: 1.2em; }
+
+/* Quote Form ========================================= */
+/* line 1444, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+header#quote h1 {
+  color: #f7f7f7;
+  max-width: 950px;
+  padding: 0px 15px;
+  text-align: center;
+  margin: auto;
+  margin-top: 30px;
+  font-size: 1.404em;
+  font-weight: 300;
+  line-height: 1.4em; }
+
+/* line 1455, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+#zip-code {
+  line-height: 3.2em;
+  padding: 8px;
+  background-color: #f7f7f7;
+  color: #2196f3;
+  border-radius: 20px; }
+
+/* line 1462, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.modal-dialog {
+  margin-top: -70px; }
+
+/* line 1465, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.modal-content {
+  background-color: #fff;
+  border: none;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.16), 0px 2px 5px 0px rgba(0, 0, 0, 0.23);
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.16), 0px 2px 5px 0px rgba(0, 0, 0, 0.23);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.16), 0px 2px 5px 0px rgba(0, 0, 0, 0.23);
+  -o-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.16), 0px 2px 5px 0px rgba(0, 0, 0, 0.23); }
+
+/* line 1473, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.modal-body .form-group .form-control {
+  background-color: #f7f7f7;
+  border-color: #ccc;
+  color: #585858;
+  margin-top: 0px; }
+
+/* line 1479, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.modal-body label .valid {
+  position: absolute; }
+
+/* line 1482, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.modal-body .form-group .form-control:focus {
+  border-color: #2196f3; }
+
+/* line 1485, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.modal-body .buttons {
+  text-align: right; }
+
+/* line 1488, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.modal-body label {
+  color: #F44336;
+  padding: 5px;
+  padding-left: 0px;
+  margin-bottom: -10px; }
+
+/* line 1494, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.modal-body .form-label {
+  color: #959595;
+  padding-left: 0px;
+  margin-bottom: 0px;
+  display: block; }
+
+/* line 1500, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.modal-body #photoUpload-vin-error {
+  display: block;
+  margin-left: -35px;
+  padding-top: 10px;
+  position: absolute;
+  margin-top: 45px;
+  padding-bottom: 20px; }
+
+/* line 1508, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.modal-body #file-3-error {
+  position: absolute;
+  font-size: 14px;
+  left: 0;
+  margin: auto;
+  margin-top: 15px; }
+
+/* line 1515, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.modal-body .text-group {
+  margin-top: 45px; }
+
+/* line 1518, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.modal-body .fa-camera {
+  padding: 0px;
+  margin-right: 10px; }
+
+/* line 1524, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.modal-body button:hover,
+.modal-body button:active,
+.modal-body button:focus {
+  background-color: #00C853; }
+
+/* line 1528, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.modal-body #submit,
+.modal-body #submit-pro-form {
+  border: 0px;
+  display: inline-block;
+  width: 100%;
+  margin-top: 15px;
+  padding: 11px;
+  border-radius: 4px;
+  background-color: #2196f3;
+  color: #f7f7f7;
+  text-transform: uppercase; }
+
+/* line 1539, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.alert {
+  display: none; }
+
+/* line 1542, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+#success-dialog {
+  display: none;
+  text-align: center;
+  margin: 15px; }
+
+/* line 1548, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+#success-dialog .fa-plus,
+#success-dialog .fa-arrow-right {
+  color: #959595; }
+
+@media (max-width: 480px) {
+  /* line 1552, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+  #success-dialog .fa {
+    font-size: 32px; }
+  /* line 1556, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+  #success-dialog .fa-plus,
+  #success-dialog .fa-arrow-right {
+    font-size: 20px; } }
+
+/* line 1560, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+#success-dialog .fa-car {
+  color: #2196f3; }
+
+/* line 1563, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+#success-dialog .fa-wrench {
+  color: #00C853; }
+
+/* line 1566, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+#success-dialog .fa-smile-o {
+  color: #FF9800; }
+
+/* line 1569, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+#img-input {
+  display: none; }
+
+/* line 1572, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.terms p {
+  text-align: center;
+  margin-top: 20px;
+  color: #959595; }
+
+/* line 1577, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.terms p a {
+  display: inline; }
+
+/* Popover ------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* line 1581, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.fa-question-circle {
+  padding: 0px;
+  color: #959595;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out; }
+
+/* line 1590, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.fa-question-circle:hover {
+  color: #4a4a4a; }
+
+/* line 1594, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.input-group-addon:active,
+.input-group-addon:focus {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px; }
+
+/* line 1598, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.popover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1060;
+  display: none;
+  max-width: 276px;
+  padding: 1px;
+  text-align: left;
+  line-height: 1.4em;
+  font-size: 14px;
+  white-space: normal;
+  background-color: #fff;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
+
+/* line 1619, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.popover.top {
+  margin-top: -10px; }
+
+/* line 1622, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.popover.right {
+  margin-left: 10px; }
+
+/* line 1625, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.popover.bottom {
+  margin-top: 10px; }
+
+/* line 1628, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.popover.left {
+  margin-left: -10px; }
+
+/* line 1631, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.popover-title {
+  padding: 8px 14px;
+  margin: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 18px;
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #ebebeb;
+  border-radius: 5px 5px 0 0; }
+
+/* line 1641, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.popover-content {
+  padding: 9px 14px; }
+
+/* line 1645, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.popover > .arrow,
+.popover > .arrow:after {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid; }
+
+/* line 1653, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.popover > .arrow {
+  border-width: 11px; }
+
+/* line 1656, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.popover > .arrow:after {
+  content: "";
+  border-width: 10px; }
+
+/* line 1660, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.popover.top > .arrow {
+  bottom: -11px;
+  left: 50%;
+  margin-left: -11px;
+  border-top-color: #999;
+  border-top-color: rgba(0, 0, 0, 0.25);
+  border-bottom-width: 0; }
+
+/* line 1668, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.popover.top > .arrow:after {
+  bottom: 1px;
+  margin-left: -10px;
+  content: " ";
+  border-top-color: #fff;
+  border-bottom-width: 0; }
+
+/* line 1675, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.popover.right > .arrow {
+  top: 50%;
+  left: -11px;
+  margin-top: -11px;
+  border-right-color: #999;
+  border-right-color: rgba(0, 0, 0, 0.25);
+  border-left-width: 0; }
+
+/* line 1683, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.popover.right > .arrow:after {
+  bottom: -10px;
+  left: 1px;
+  content: " ";
+  border-right-color: #fff;
+  border-left-width: 0; }
+
+/* line 1690, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.popover.bottom > .arrow {
+  top: -11px;
+  left: 50%;
+  margin-left: -11px;
+  border-top-width: 0;
+  border-bottom-color: #999;
+  border-bottom-color: rgba(0, 0, 0, 0.25); }
+
+/* line 1698, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.popover.bottom > .arrow:after {
+  top: 1px;
+  margin-left: -10px;
+  content: " ";
+  border-top-width: 0;
+  border-bottom-color: #fff; }
+
+/* line 1705, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.popover.left > .arrow {
+  top: 50%;
+  right: -11px;
+  margin-top: -11px;
+  border-right-width: 0;
+  border-left-color: #999;
+  border-left-color: rgba(0, 0, 0, 0.25); }
+
+/* line 1713, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.popover.left > .arrow:after {
+  right: 1px;
+  bottom: -10px;
+  content: " ";
+  border-right-width: 0;
+  border-left-color: #fff; }
+
+@media (max-width: 530px) {
+  /* line 1721, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+  .modal-body button {
+    width: 100%; }
+  /* line 1725, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+  .modal-body #submit,
+  .modal-body #submit-pro-form {
+    width: 100%;
+    margin-top: 20px; } }
+
+/* Loader -------------------------------------------------------------------------------------------------------------------------------- */
+/* line 1731, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.loading {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  border-radius: 4px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; }
+
+/* line 1742, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+#circularG {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  width: 60px;
+  height: 60px; }
+
+/* line 1752, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+.circularG {
+  position: absolute;
+  background-color: #fff;
+  width: 14px;
+  height: 14px;
+  -moz-border-radius: 9px;
+  -moz-animation-name: bounce_circularG;
+  -moz-animation-duration: 1.36s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-direction: normal;
+  -webkit-border-radius: 9px;
+  -webkit-animation-name: bounce_circularG;
+  -webkit-animation-duration: 1.36s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+  -ms-border-radius: 9px;
+  -ms-animation-name: bounce_circularG;
+  -ms-animation-duration: 1.36s;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-direction: normal;
+  -o-border-radius: 9px;
+  -o-animation-name: bounce_circularG;
+  -o-animation-duration: 1.36s;
+  -o-animation-iteration-count: infinite;
+  -o-animation-direction: normal;
+  border-radius: 9px;
+  animation-name: bounce_circularG;
+  animation-duration: 1.36s;
+  animation-iteration-count: infinite;
+  animation-direction: normal; }
+
+/* line 1784, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+#circularG_1 {
+  left: 0;
+  top: 24px;
+  -moz-animation-delay: 0.51s;
+  -webkit-animation-delay: 0.51s;
+  -ms-animation-delay: 0.51s;
+  -o-animation-delay: 0.51s;
+  animation-delay: 0.51s; }
+
+/* line 1794, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+#circularG_2 {
+  left: 6px;
+  top: 6px;
+  -moz-animation-delay: 0.68s;
+  -webkit-animation-delay: 0.68s;
+  -ms-animation-delay: 0.68s;
+  -o-animation-delay: 0.68s;
+  animation-delay: 0.68s; }
+
+/* line 1804, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+#circularG_3 {
+  top: 0;
+  left: 24px;
+  -moz-animation-delay: 0.85s;
+  -webkit-animation-delay: 0.85s;
+  -ms-animation-delay: 0.85s;
+  -o-animation-delay: 0.85s;
+  animation-delay: 0.85s; }
+
+/* line 1814, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+#circularG_4 {
+  right: 6px;
+  top: 6px;
+  -moz-animation-delay: 1.02s;
+  -webkit-animation-delay: 1.02s;
+  -ms-animation-delay: 1.02s;
+  -o-animation-delay: 1.02s;
+  animation-delay: 1.02s; }
+
+/* line 1824, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+#circularG_5 {
+  right: 0;
+  top: 24px;
+  -moz-animation-delay: 1.19s;
+  -webkit-animation-delay: 1.19s;
+  -ms-animation-delay: 1.19s;
+  -o-animation-delay: 1.19s;
+  animation-delay: 1.19s; }
+
+/* line 1834, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+#circularG_6 {
+  right: 6px;
+  bottom: 6px;
+  -moz-animation-delay: 1.36s;
+  -webkit-animation-delay: 1.36s;
+  -ms-animation-delay: 1.36s;
+  -o-animation-delay: 1.36s;
+  animation-delay: 1.36s; }
+
+/* line 1844, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+#circularG_7 {
+  left: 24px;
+  bottom: 0;
+  -moz-animation-delay: 1.53s;
+  -webkit-animation-delay: 1.53s;
+  -ms-animation-delay: 1.53s;
+  -o-animation-delay: 1.53s;
+  animation-delay: 1.53s; }
+
+/* line 1854, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+#circularG_8 {
+  left: 6px;
+  bottom: 6px;
+  -moz-animation-delay: 1.7s;
+  -webkit-animation-delay: 1.7s;
+  -ms-animation-delay: 1.7s;
+  -o-animation-delay: 1.7s;
+  animation-delay: 1.7s; }
+
+@-moz-keyframes bounce_circularG {
+  0% {
+    -moz-transform: scale(1); }
+  100% {
+    -moz-transform: scale(0.3); } }
+
+@-webkit-keyframes bounce_circularG {
+  0% {
+    -webkit-transform: scale(1); }
+  100% {
+    -webkit-transform: scale(0.3); } }
+
+@-ms-keyframes bounce_circularG {
+  /* line 1883, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+  0% {
+    -ms-transform: scale(1); }
+  /* line 1886, /Library/WebServer/Documents/Auto Quotable/assets/css/styles.scss */
+  100% {
+    -ms-transform: scale(0.3); } }
+
+@-o-keyframes bounce_circularG {
+  0% {
+    -o-transform: scale(1); }
+  100% {
+    -o-transform: scale(0.3); } }
+
+@keyframes bounce_circularG {
+  0% {
+    transform: scale(1); }
+  100% {
+    transform: scale(0.3); } }
+
+/*# sourceMappingURL=styles.css.map */

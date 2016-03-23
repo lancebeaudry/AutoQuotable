@@ -1,0 +1,33 @@
+<footer>
+    <div class="container">
+         <div class="row">
+             <ul class="col-md-3 col-sm-3 navigation">
+                 <h4>Customers</h4>
+                 <li><a href="index.php">{{ info.item1 }}</a></li>
+                 <li><a href="faq.php">{{ info.item3 }}</a></li>
+                 <li><a href="contact.php">{{ info.item4 }}</a></li>
+             </ul>
+             <ul class="col-md-3 col-sm-3 navigation">
+                 <h4>Auto Body Shops</h4>
+                 <li><a href="auto-body-shops.php">{{ info.item7 }}</a></li>
+                 <li><a href="sign-up.php">{{ info.item8 }}</a></li>
+             </ul>
+             <div class="contact-info col-md-3 col-sm-3">
+                 <h4>Contact</h4>
+                 <p><a href="mailto:contact@autoquotable.com">{{ info.email }}</a></p>
+             </div>
+             <div class="social col-md-3 col-sm-3">
+                 <h4>Social</h4>
+                 <a href="https://www.facebook.com/autoquotable" target="_blank" id="facebook"><i class="fa fa-facebook fa-2x"></i></a>
+                 <a href="https://twitter.com/autoquotable" target="_blank" id="twitter"><i class="fa fa-twitter fa-2x"></i></a>
+             </div>
+         </div>
+    </div>
+    <div class="container">
+        <p id="copyright"><img ng-src="{{ info.logo }}" alt="formate logo" id="footer-logo"/> &copy; 2015 {{ info.name }}</p>
+        <div class="bottom">
+            <p class="legal"><a href="terms-of-use.php">{{ info.item5 }}</a></p>
+            <p class="legal"><a href="privacy-policy.php">{{ info.item6 }}</a></p>
+        </div>
+    </div>
+</footer>

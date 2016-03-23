@@ -1,0 +1,29 @@
+<nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" ng-click="isCollapsed = !isCollapsed" id="menu">
+        <span class="sr-only">Toggle navigation</span>
+        <i class="fa fa-bars fa-2x"></i>
+      </button>
+      <a class="navbar-brand" href="index.php">
+        <img ng-src="{{ info.logo }}" alt="formate logo" id="logo"/>
+      </a>
+    </div>
+    <div class="zip-on-nav">
+        <form action="estimate.php" method="post" id="zip-nav">    
+            <div class="form-group">
+                <input type="text" pattern="[0-9]*" class="form-control" name="zip" placeholder="Zip Code" maxlength="5" minlength="5" size="5" required>
+            </div>
+            <div class="form-group">
+                <input type="submit" class="btn btn-default try" id="zip-submit-bottom" value="Continue &#10140;">
+            </div>
+        </form>
+    </div>
+    <div class="collapse navbar-collapse" ng-init="isCollapsed = true" collapse="isCollapsed">
+            <ul class="nav navbar-nav">
+                <li><a href="index.php">{{ info.item1 }}</a></li>
+                <li><a href="faq.php">{{ info.item3 }}</a></li>
+                <li><a href="contact.php">{{ info.item4 }}</a></li>
+            </ul>   
+    </div>
+</nav>
