@@ -179,6 +179,7 @@
     </script>
     <script>
 	$("#file-3").fileinput({
+    		multiple: true,
 		showUpload: false,
 		showCaption: false,
 		browseClass: "btn btn-default",
@@ -188,6 +189,7 @@
         showRemove: false,
 	});
     $("#file-2").fileinput({
+    		multiple: true,
 		showUpload: false,
 		showCaption: false,
 		browseClass: "btn btn-default",
@@ -197,6 +199,7 @@
         showRemove: false,
 	}); 
     $("#file-1").fileinput({
+    		multiple: true,
 		showUpload: false,
 		showCaption: false,
 		browseClass: "btn btn-default",
