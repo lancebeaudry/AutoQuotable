@@ -87,13 +87,13 @@
                 <div class="buttons">
                     <label class="form-label">For the most accurate estimate, take at least 3 photos from different angles.</label>
                     <div class="form-group">
-                        <input id="file-1" type="file" name="photo1" multiple="true" required>
+                        <input id="file-1" type="file" name="photo[]" required>
                     </div>
                     <div class="form-group">
-                        <input id="file-2" type="file" name="photo2" multiple="true" required>
+                        <input id="file-2" type="file" name="photo[]" required>
                     </div>
                     <div class="form-group">
-                        <input id="file-3" type="file" name="photo2" multiple="true" required>
+                        <input id="file-3" type="file" name="photo[]" required>
                     </div>
                     <span id="submit-area">
                         <input type="submit" class="btn btn-default" id="submit" value="Complete">
