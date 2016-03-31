@@ -52,8 +52,10 @@ $(document).ready(function () {
         formData.append('zip', zip);
         formData.append('phone', phone);
         formData.append('textarea', textarea);
-        formData.append('photo', $('#file-1')[0].files[0]);
-        
+
+        $('[name="photo[]"]').each(function () {
+            formData.append('photo[]', $(this)[0].files[0]);
+        });
         
         $.ajax({
             url: "assets/php/contact.php",
